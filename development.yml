@@ -3,6 +3,12 @@
 - name: Ubuntu Development Playbook
   hosts: localhost
   roles:
+    - role: 'gh-cli'
+      tags:
+        - gh
+        - gh:cli
+        - development:cli
+      when: ghcli_enabled | bool
     - role: 'aws/cli'
       tags:
         - aws
