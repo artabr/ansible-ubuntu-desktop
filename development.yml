@@ -98,6 +98,12 @@
         - lens
         - development:editor
       when: lens_enabled | bool
+    - role: nvm
+      become: false
+      tags:
+        - nvm
+        - development:programing
+      when: nvm_enabled | bool
     - role: python
       tags:
         - python

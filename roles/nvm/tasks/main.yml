@@ -1,0 +1,24 @@
+---
+
+- name: Install NVM (Mac)
+  become: false
+  homebrew:
+    name: nvm
+    state: present
+  when: ansible_os_family == 'Darwin'
+
+- name: Ensure zsh profile exists
+  stat:
+    path: "~/.zshrc"
+  register: zshrc_file
+
+- name: Add NVM to shell profile
+  ansible.builtin.blockinfile:
+    path: "{{ zshrc_file.stat.path }}"
+    append_newline: true
+    prepend_newline: true
+    block: |
+      export NVM_DIR="$HOME/.nvm"
+      [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"  # This loads nvm
+      [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+  when: zshrc_file.stat.exists
