@@ -4,3 +4,11 @@
   pip: 
     name: awscli 
     state: present
+  when: ansible_os_family != 'Darwin'
+
+- name: Install awscli (Mac)
+  become: false
+  homebrew:
+    name: awscli
+    state: present
+  when: ansible_os_family == 'Darwin'
