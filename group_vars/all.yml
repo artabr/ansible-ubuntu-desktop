@@ -80,6 +80,7 @@ virtmanager_enabled:          no
 vscode_enabled:               no
 vscodium_enabled:             no
 winbox_enabled:               no
+iterm2_enabled:               no
 zsh_enabled:                  no
 ohmyzsh_enabled:              no
 

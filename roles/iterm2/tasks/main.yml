@@ -1,0 +1,8 @@
+---
+
+- name: Install iterm2 (Mac)
+  become: false
+  homebrew_cask:
+    name: iterm2
+    state: present
+  when: ansible_os_family == 'Darwin'

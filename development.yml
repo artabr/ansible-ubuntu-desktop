@@ -161,6 +161,10 @@
         - vscode
         - development:programing
       when: vscode_enabled | bool
+    - role: iterm2
+      tags:
+        - iterm2
+      when: iterm2_enabled | bool
     - role: zsh
       tags:
         - zsh
