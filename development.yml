@@ -165,6 +165,10 @@
       tags:
         - zsh
       when: zsh_enabled | bool
+    - role: ohmyzsh
+      tags:
+        - ohmyzsh
+      when: ohmyzsh_enabled | bool
 #    - role: vokoscreen
 #      become: true
 #      tags:

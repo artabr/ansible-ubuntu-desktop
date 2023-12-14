@@ -1,0 +1,12 @@
+---
+
+  - name: Download oh-my-zsh installer
+    ansible.builtin.uri:
+      url: https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh
+      return_content: yes
+    register: ohmyzsh_installer
+
+  - name: Run oh-my-zsh installer
+    ansible.builtin.shell:
+      cmd: sh -s -- -y
+      stdin: "{{ ohmyzsh_installer.content }}"

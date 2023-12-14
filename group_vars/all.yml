@@ -81,6 +81,7 @@ vscode_enabled:               no
 vscodium_enabled:             no
 winbox_enabled:               no
 zsh_enabled:                  no
+ohmyzsh_enabled:              no
 
 # http://docs.ansible.com/ansible/playbooks_variables.html#variable-precedence-where-should-i-put-a-variable
 aptcachetime: 3600
