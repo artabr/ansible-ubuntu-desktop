@@ -1,0 +1,8 @@
+---
+
+- name: Install Hyper terminal (Mac)
+  become: false
+  homebrew_cask:
+    name: hyper
+    state: present
+  when: ansible_os_family == 'Darwin'

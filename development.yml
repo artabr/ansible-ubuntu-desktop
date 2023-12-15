@@ -98,6 +98,12 @@
         - lens
         - development:editor
       when: lens_enabled | bool
+    - role: hyper
+      become: true
+      tags:
+        - hyper
+        - development:terminal
+      when: hyper_enabled | bool
     - role: nvm
       become: false
       tags:

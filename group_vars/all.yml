@@ -24,6 +24,7 @@ doublecmd_enabled:            no
 envchain_enabled:             no
 filezilla_enabled:            no
 firefox_enabled:              no
+hyper_enabled:                no
 ghcli_enabled:                no
 gimp_enabled:                 no
 gitg_enabled:                 no
