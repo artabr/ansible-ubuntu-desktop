@@ -104,6 +104,11 @@
       tags:
         - losslesscut
       when: losslesscut_enabled | bool
+    - role: mucommander
+      become: true
+      tags:
+        - mucommander
+      when: mucommander_enabled | bool
     - role: nautilus-plugins
       become: true
       tags:

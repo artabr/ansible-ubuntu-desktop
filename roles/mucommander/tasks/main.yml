@@ -1,0 +1,8 @@
+---
+
+- name: Install muCommander (Mac)
+  become: false
+  homebrew_cask:
+    name: mucommander
+    state: present
+  when: ansible_os_family == 'Darwin'
