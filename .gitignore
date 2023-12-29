@@ -3,3 +3,5 @@
 *.retry
 group_vars/_*.yml
 group_vars/local.yml
+.idea
+node_modules

@@ -1,0 +1,15 @@
+{
+  "name": "ansible-ubuntu-desktop",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Ansible roles to setup Ubuntu desktop. This playbook is focused on quickly deploying a \"ready to use\" Ubuntu Desktop.",
+  "scripts": {
+    "lint": "eslint --ext .yaml,.yml *.yml roles group_vars",
+    "lint:fix": "eslint --fix --ext .yaml,.yml *.yml roles group_vars"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.56.0",
+    "eslint-plugin-yml": "^1.11.0"
+  }
+}
