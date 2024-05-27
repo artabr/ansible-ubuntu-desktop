@@ -1,0 +1,103 @@
+---
+
+common_enabled: no
+locales_enabled: no
+desktop_enabled: no
+
+angryipscanner_enabled: no
+atom_enabled: no
+aws_enabled: no
+awscli_enabled: yes
+awsebcli_enabled: no
+awsecscli_enabled: no
+barrier_enabled: no
+bitwarden_enabled: no
+chrome_enabled: yes
+chromium_enabled: no
+common_git_enabled: no
+dbeaver_enabled: no
+discord_enabled: no
+doctl_enabled: no
+docker_enabled: no
+dots_enabled: no
+doublecmd_enabled: no
+envchain_enabled: no
+filezilla_enabled: no
+firefox_enabled: yes
+hyper_enabled: yes
+ghcli_enabled: yes
+gimp_enabled: no
+gitg_enabled: no
+gnome_encfs_manager_enabled: no
+gparted_enabled: no
+go_enabled: no
+go_assh_enabled: no
+golang_enabled: no
+guake_enabled: no
+handbrake_enabled: no
+indicator_sysmonitor_enabled: no
+java_openjdk_enabled: no
+java_openjre_enabled: no
+kazan_enabled: no
+kubectl_enabled: no
+nvm_enabled: yes
+lens_enabled: no
+ledger_live_enabled: no
+libreoffice_enabled: no
+losslesscut_enabled: no
+minikube_enabled: no
+meld_enabled: no
+mysql_workbench_enabled: no
+mucommander_enabled: yes
+nautilus_plugins_enabled: no
+nextcloud_enabled: no
+noisetorch_enabled: no
+pop_os_enabled: no
+pop_os_shell_enabled: no
+python_enabled: no
+remmina_enabled: no
+ruby_enabled: no
+ruby_rbenv_enabled: no
+ruby_landscape_enabled: no
+scribus_enabled: no
+shutter_enabled: no
+signal_enabled: no
+skype_enabled: no
+slack_enabled: no
+solaar_enabled: no
+snapd_enabled: no
+ssh_enabled: no
+sublime3_enabled: no
+sunflower_enabled: no
+syncthing_enabled: no
+teamviewer_enabled: no
+tfenv_enabled: no
+tgenv_enabled: no
+thunderbird_enabled: no
+timeshift_enabled: no
+tlp_enabled: no
+tmux_enabled: no
+ufw_enabled: no
+vagrant_enabled: no
+virtualbox_enabled: no
+virtmanager_enabled: no
+vscode_enabled: no
+vscodium_enabled: no
+winbox_enabled: no
+iterm2_enabled: yes
+zsh_enabled: no
+ohmyzsh_enabled: yes
+
+# http://docs.ansible.com/ansible/playbooks_variables.html#variable-precedence-where-should-i-put-a-variable
+aptcachetime: 3600
+locale: en_US.UTF-8
+timezone: Asia/Beirut
+chromium:
+  set_default: false
+  policy: false
+  extensions: false
+ssh:
+  start: true
+  service_enabled: true
+  password_auth: false
+  root_login: false
