@@ -6,3 +6,11 @@
     state: present
     update_cache: yes
     cache_valid_time: "{{ aptcachetime }}"
+  when: ansible_os_family != 'Darwin'
+
+- name: Install Double Commander (Mac)
+  become: false
+  homebrew_cask:
+    name: double-commander
+    state: present
+  when: ansible_os_family == 'Darwin'
