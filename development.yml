@@ -104,6 +104,12 @@
         - hyper
         - development:terminal
       when: hyper_enabled | bool
+    - role: insomnia
+      become: false
+      tags:
+        - insomnia
+        - development:programing
+      when: insomnia_enabled | bool
     - role: nvm
       become: false
       tags:

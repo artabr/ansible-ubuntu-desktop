@@ -1,0 +1,8 @@
+---
+
+- name: Install Insomnia (Mac)
+  become: false
+  homebrew_cask:
+    name: insomnia
+    state: present
+  when: ansible_os_family == 'Darwin'
